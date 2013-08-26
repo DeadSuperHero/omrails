@@ -1,6 +1,10 @@
 $baseFontFamily: Roboto;
 @import url(http://fonts.googleapis.com/css?family=Roboto:200);
 
+$btnPrimaryBackground: green;
+$navbarBackghroundHighlight: white;
+$navbarBackground: white;
+
 @import 'bootstrap';
 
 body {
