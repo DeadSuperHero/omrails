@@ -1,5 +1,4 @@
-$baseFontFamily: Roboto;
-@import url(http://fonts.googleapis.com/css?family=Roboto:200);
+$baseFontFamily: Helvetica, sans;
 
 $btnPrimaryBackground: green;
 $navbarBackghroundHighlight: white;
@@ -14,7 +13,6 @@ body {
 @import 'bootstrap-responsive';
 
 .footer {
-	margin-top: 50px;
 	color: $grayLight;
 	a {
 		color: $gray;
