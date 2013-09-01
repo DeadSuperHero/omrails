@@ -2,7 +2,7 @@ class PinsController < ApplicationController
   before_filter :authenticate_user!, except: [:index, :show]
 
   def pin_params
-    params.require(:pin).permit(:description, :image)
+    params.require(:pin).permit(:description, :image, :image_remote_url)
   end
 
   # GET /pins
