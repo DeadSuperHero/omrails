@@ -2,5 +2,7 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @pin %> |
-<%= link_to 'Back', pins_path %>
+<% if current_user == @pin.user %>
+	<%= link_to 'Show', @pin %> |
+	<%= link_to 'Back', pins_path %>
+<% end %>
