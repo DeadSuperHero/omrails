@@ -11,14 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130901033444) do
+ActiveRecord::Schema.define(:version => 20130901232226) do
 
   create_table "pins", :force => true do |t|
     t.string   "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
     t.integer  "user_id"
     t.string   "image"
+    t.string   "image_remote_url"
   end
 
   add_index "pins", ["user_id"], :name => "index_pins_on_user_id"
